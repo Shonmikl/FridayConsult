@@ -1,6 +1,7 @@
 package _18_11_2022.students;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Predicate<T> boolean(T t) - проверяет удовлетворяет ли состояние объекта условию
@@ -41,7 +42,15 @@ public class StudentInfo {
         StudentInfo info = new StudentInfo();
         info.testStudent(student, s -> s.getAvgGrade() > 8);
 
+        int[] arr = {3, 21, 65, 4, 98, 7, 65, 4};
+        int a = Arrays.stream(arr)
 
+                .map(el -> el * 3)
+                .filter(el -> el % 4 == 0)
+                .reduce(Integer::sum)
+
+                .getAsInt();
+        System.out.println(a);
     }
 }
 
