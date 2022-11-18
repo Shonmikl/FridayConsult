@@ -1,7 +1,10 @@
 package _18_11_2022.students;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Spliterator;
 
 /**
  * Predicate<T> boolean(T t) - проверяет удовлетворяет ли состояние объекта условию
@@ -16,7 +19,6 @@ import java.util.Arrays;
  */
 
 public class StudentInfo {
-
     void testStudent(ArrayList<Student> al, StudentCheck sc) {
         for (Student s : al) {
             if (sc.check(s)) {
@@ -43,14 +45,13 @@ public class StudentInfo {
         info.testStudent(student, s -> s.getAvgGrade() > 8);
 
         int[] arr = {3, 21, 65, 4, 98, 7, 65, 4};
-        int a = Arrays.stream(arr)
+        Arrays.stream(arr)
 
                 .map(el -> el * 3)
-                .filter(el -> el % 4 == 0)
-                .reduce(Integer::sum)
-
-                .getAsInt();
-        System.out.println(a);
+                .distinct()
+                .forEach(System.out::println);
+                //reduce((acc, el) -> acc + el)
+        long a = System.currentTimeMillis();
     }
 }
 
