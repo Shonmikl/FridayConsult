@@ -14,13 +14,7 @@ public class TestArIter {
         city.add("Stockholm");
         city.add("Prague");
 
-       /* Iterator<String> iterCity = city.iterator();
-
-        while (iterCity.hasNext()){
-            System.out.println(iterCity.next());
-        }
-        */
-        ArrayIterator arrayIterator = new ArrayIterator();
+        ArrayIterator arrayIterator = new ArrayIterator(city);
         while (arrayIterator.hasNext()) {
             System.out.println(arrayIterator.next());
         }
