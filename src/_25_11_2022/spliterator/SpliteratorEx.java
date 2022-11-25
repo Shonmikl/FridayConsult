@@ -1,4 +1,4 @@
-package _25_11_2022;
+package _25_11_2022.spliterator;
 
 import java.util.List;
 import java.util.Spliterator;

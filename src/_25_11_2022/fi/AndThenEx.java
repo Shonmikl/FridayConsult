@@ -1,4 +1,4 @@
-package _25_11_2022;
+package _25_11_2022.fi;
 
 import java.util.Arrays;
 import java.util.function.Function;

@@ -1,4 +1,4 @@
-package _25_11_2022;
+package _25_11_2022.fi;
 
 import java.util.function.Function;
 
@@ -7,5 +7,6 @@ public class IdentityEx {
         Function<Integer, Integer> fun = Function.identity();
         System.out.println(fun.apply(100));
         // как в стрим положить identity()?
+
     }
 }
