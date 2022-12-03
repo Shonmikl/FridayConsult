@@ -45,8 +45,5 @@ public class Test {
         pupilTeam1.playWith(pupilTeam2);
         studentTeam1.playWith(studentTeam2);
         adultTeam1.playWith(adultTeam2);
-
-
-
     }
 }

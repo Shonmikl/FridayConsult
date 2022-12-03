@@ -1,0 +1,5 @@
+- File R\W (txt)
+- File IS\OS (bin)
+- Buffered R\W (buff)
+- Data I\O (prime)
+- Serial
