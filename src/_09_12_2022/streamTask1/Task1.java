@@ -63,7 +63,7 @@ public class Task1 {
         Stream<String> str = Stream.of("Unless", "you", "are", "an", "individual",
                 "member", "of", "the",
                 "Royal", "Family", "in", "which", "case", "you", "might", "be", "opening",
-                "the", "champagne",
+                "the", "champagne!",
                 "a", "drink", "we", "learnt", "from", "this", "new", "show", "that", "Harry",
                 "doesn't", "usually", "enjoy");
 
@@ -74,5 +74,16 @@ public class Task1 {
                         .max(Map.Entry.comparingByKey());
 
         System.out.println(max);
+
+        //Natalia version
+        List<String> words=Arrays.asList("Unless", "you", "are", "an", "individual",
+                "member", "of", "the",
+                "Royal", "Family", "in", "which", "case", "you", "might", "be", "opening",
+                "the", "champagne!",
+                "a", "drink", "we", "learnt", "from", "this", "new", "show", "that", "Harry",
+                "doesn't", "usually", "enjoy");
+        Map<Integer, List<String>> map1 =
+                words.stream().collect(Collectors.groupingBy(String::length));
+        System.out.println(map1.entrySet().stream().max(Map.Entry.comparingByKey()).get());
     }
 }
