@@ -67,10 +67,12 @@ public class Task1 {
                 "a", "drink", "we", "learnt", "from", "this", "new", "show", "that", "Harry",
                 "doesn't", "usually", "enjoy");
 
-        //Optional<Map.Entry<Integer, List<String>>> max =
+        Optional<Map.Entry<Integer, List<String>>> max =
+                str.collect(Collectors.groupingBy(String::length))
+                        .entrySet()
+                        .stream()
+                        .max(Map.Entry.comparingByKey());
 
-
-
-        //System.out.println(max);
+        System.out.println(max);
     }
 }
