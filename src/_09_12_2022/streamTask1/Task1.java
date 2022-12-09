@@ -45,8 +45,8 @@ public class Task1 {
 
         //Yulia version
         Map<Object, Long> collect = Arrays.stream(s.split(""))
-                .filter(a -> a.matches("\\S"))
-                .filter(a -> !a.matches("[-]") && !a.matches("\\s"))
+                .filter(a -> a.matches("\\w"))
+                .filter(a -> !a.matches("-"))
                 .collect(Collectors.groupingBy(
                         a -> a.matches("[A-Z]"),
                         Collectors.counting()
@@ -67,6 +67,10 @@ public class Task1 {
                 "a", "drink", "we", "learnt", "from", "this", "new", "show", "that", "Harry",
                 "doesn't", "usually", "enjoy");
 
+        //Optional<Map.Entry<Integer, List<String>>> max =
 
+
+
+        //System.out.println(max);
     }
 }
