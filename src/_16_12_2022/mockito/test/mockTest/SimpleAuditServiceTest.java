@@ -1,5 +1,6 @@
 //package _16_12_2022.mockito.test.mockTest;
 //
+//import _16_12_2022.mockito.mock.*;
 //import javaProf.unit.mockito.mock.*;
 //import org.mockito.*;
 //import static org.mockito.Mockito.*;
@@ -11,10 +12,10 @@
 //class SimpleAuditServiceTest {
 //
 //	@Mock  // actually, this is a stub
-//	TradeRepository tradeRepository;
+//    TradeRepository tradeRepository;
 //
 //	@Mock  // and this one is indeed a mock
-//	AuditService auditService;
+//    AuditService auditService;
 //
 //	@Test
 //	public void testAuditLogEntryMadeForNewTrade() throws Exception {
