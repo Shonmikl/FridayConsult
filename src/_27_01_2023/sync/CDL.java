@@ -28,7 +28,6 @@ public class CDL {
     }
 
     public static void main(String[] args) throws InterruptedException {
-
         new Friend1("QQQ", countDownLatch);
         new Friend1("AAA", countDownLatch);
         new Friend1("WWW", countDownLatch);
